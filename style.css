@@ -1,0 +1,12 @@
+.jumbotron {
+	background-image: url("../assets/Images/Fchild_hunger.jpg");
+	background-size: cover;
+}
+
+#title {
+	font-family: 'Berkshire Swash', cursive;
+}
+
+#signup {
+	font-family: 'Francois One', sans-serif;
+}

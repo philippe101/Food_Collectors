@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>FoodCollectors</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Francois+One" rel="stylesheet">
+</head>
+
+<body>
+	<!--NAVBAR-->
+	<nav class="navbar navbar-light col align-items-end" style="background-color: #00C4C2;">
+<blockquote class="blockquote">
+  <p class="mb-0"><em>“You have not lived today until you have done something for someone who can never repay you.”</em></p>
+  <footer class="blockquote-footer text-white">John Bunyan</footer>
+</blockquote>
+</nav>
+	<!--JUMBOTRON-->
+    <div class="jumbotron jumbotron-fluid">
+    	<div class="container">
+    	<h1 id="title" class="display-1 text-center">Food Collectors</h1>
+        <p class="lead">In the USA, many tons of food are thrown away from grocery stores, bakeries and restaurants on a daily basis. Meanwhile, 1 in 7 people struggle from hunger including children. We want to connect food that is still good but would have been thrown out and deliver it to those in need. </p>
+        </div>
+    </div>
+	<!--SIGN UPS-->
+<div class="row">
+  <div class="col-sm mx-4">
+    <div id="title" class="card-header bg-success display-4 text-white text-center">Food Collector</div>
+      <div class="card-body">
+        <p id="signup" class="h4 mb-4">Help out the good cause and volunteer your time to deliver food donations to a local food bank. You will be helping feed those in need and that's something you can feel good about.</p>
+        <button type="button" class="btn btn-outline-success btn-lg d-inline-block mx-auto" data-toggle="modal" data-target="#regifood">Sign Up!</button>
+      </div>
+    </div>
+  
+  <div class="col-sm mx-4">
+    <div id="title" class="card-header bg-warning display-4 text-white text-center">Contributor</div>
+      <div class="card-body">
+        <p id="signup" class="h4 mb-4">Don't throw that perfectly good food away! Come and register with us and we'll have someone stop by and pick up that food from you. You'll be feeding those who are struggling with hunger.</p>
+        <button type="button" class="btn btn-outline-warning btn-lg d-inline-block mx-auto" data-toggle="modal" data-target="#regicont">Sign Up!</button>
+      </div>
+    </div>
+</div>
+
+<!--	MODALS     -->
+
+<!--FOOD COLLECTOR MODAL-->
+<div class="modal fade" id="regifood" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title" id="exampleModalLabel">Register for Food Collector</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!--regitstration form-->
+		<form>
+  <div class="form-group">
+    <label class="col-form-label" for="name">Name</label>
+    <input type="text" class="form-control" id="name">
+  </div>
+  <div class="form-group">
+    <label class="col-form-label" for="email">Email</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label class="col-form-label" for="phone">Phone Number</label>
+    <input type="text" class="form-control" id="phone">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Register</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--CONTRIBUTOR-->
+<div class="modal fade" id="regicont" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-warning text-white">
+        <h5 class="modal-title" id="exampleModalLabel">Register for Contributor</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<!--registration form-->
+        <form>
+  <div class="form-group">
+    <label class="col-form-label" for="storename">Store Name</label>
+    <input type="text" class="form-control" id="storename">
+  </div>
+  <div class="form-group">
+    <label class="col-form-label" for="name">Name</label>
+    <input type="text" class="form-control" id="name">
+  </div>
+  <div class="form-group">
+    <label class="col-form-label" for="email">Email</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label class="col-form-label" for="phone">Phone Number</label>
+    <input type="text" class="form-control" id="phone">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+    <div class="form-group col-md-12">
+    <label for="pickupinstructions">Instructions for pick-up</label>
+    <textarea class="form-control" id="pickupinstructions" rows="3"></textarea>
+  </div>
+  </div>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning">Register</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--    /MODALS    -->
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+
+</html>
