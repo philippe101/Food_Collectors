@@ -13,175 +13,158 @@
 </head>
 
 <body>
-	<!--NAVBAR-->
-	<nav class="navbar navbar-light col align-items-end" style="background-color: #00C4C2;">
-<blockquote class="blockquote">
-  <p class="mb-0"><em>“You have not lived today until you have done something for someone who can never repay you.”</em></p>
-  <footer class="blockquote-footer text-white">John Bunyan</footer>
-</blockquote>
-</nav>
-	<!--JUMBOTRON-->
+    <!--NAVBAR-->
+    <nav class="navbar navbar-light col align-items-end" style="background-color: #00C4C2;">
+        <blockquote class="blockquote">
+            <p class="mb-0"><em>“You have not lived today until you have done something for someone who can never repay you.”</em></p>
+            <footer class="blockquote-footer text-white">John Bunyan</footer>
+        </blockquote>
+    </nav>
+    <!--JUMBOTRON-->
     <div class="jumbotron jumbotron-fluid">
-    	<div class="container">
-    	<h1 id="title" class="display-1 text-center">Food Collectors</h1>
-        <p class="lead">In the USA, many tons of food are thrown away from grocery stores, bakeries and restaurants on a daily basis. Meanwhile, 1 in 7 people struggle from hunger including children. We want to connect food that is still good but would have been thrown out and deliver it to those in need. </p>
+        <div class="container">
+            <h1 id="title" class="display-1 text-center">Food Collectors</h1>
+            <p class="lead">In the USA, many tons of food are thrown away from grocery stores, bakeries and restaurants on a daily basis. Meanwhile, 1 in 7 people struggle from hunger including children. We want to connect food that is still good but would have been thrown out and deliver it to those in need. </p>
         </div>
     </div>
-	<!--SIGN UPS-->
-<div class="row">
-  <div class="col-sm mx-4">
-    <div id="title" class="card-header bg-success display-4 text-white text-center">Food Collector</div>
-      <div class="card-body">
-        <p id="signup" class="h4 mb-4">Help out the good cause and volunteer your time to deliver food donations to a local food bank. You will be helping feed those in need and that's something you can feel good about.</p>
-        <button type="button" class="btn btn-outline-success btn-lg d-inline-block mx-auto" data-toggle="modal" data-target="#regifood">Sign Up!</button>
-      </div>
+    <!--SIGN UPS-->
+    <div class="row">
+        <div class="col-sm mx-4">
+            <div id="title" class="card-header bg-success display-4 text-white text-center">Food Collector</div>
+            <div class="card-body">
+                <p id="signup" class="h4 mb-4">Help out the good cause and volunteer your time to deliver food donations to a local food bank. You will be helping feed those in need and that's something you can feel good about.</p>
+            </div>
+        </div>
+        <div class="col-sm mx-4">
+            <div id="title" class="card-header bg-warning display-4 text-white text-center">Contributor</div>
+            <div class="card-body">
+                <p id="signup" class="h4 mb-4">Don't throw that perfectly good food away! Come and register with us and we'll have someone stop by and pick up that food from you. You'll be feeding those who are struggling with hunger.</p>
+            </div>
+        </div>
     </div>
-  
-  <div class="col-sm mx-4">
-    <div id="title" class="card-header bg-warning display-4 text-white text-center">Contributor</div>
-      <div class="card-body">
-        <p id="signup" class="h4 mb-4">Don't throw that perfectly good food away! Come and register with us and we'll have someone stop by and pick up that food from you. You'll be feeding those who are struggling with hunger.</p>
-        <button type="button" class="btn btn-outline-warning btn-lg d-inline-block mx-auto" data-toggle="modal" data-target="#regicont">Sign Up!</button>
-      </div>
+    <button type="button" class="w-50 btn btn-primary btn-lg btn-block mx-auto" data-toggle="modal" data-target="#register">Don't Wait, Sign Up Now!</button>
+    <!--  MODALS     -->
+    <!--FOOD COLLECTOR MODAL-->
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">Register for Food Collector</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!--regitstration form-->
+                    <form>
+                        <div class="dropdown show">
+                            <a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Job title</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Food Collector</a>
+                                <a class="dropdown-item" href="#">Contributor</a>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="name">Name</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="email">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="phone">Phone Number</label>
+                            <input type="text" class="form-control" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <select id="inputState" class="form-control">
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="DC">District Of Columbia</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                    </form>
+                  </div>
+                <d  iv class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <input type="submit" class="btn btn-outline-primary"></input>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-
-<!--	MODALS     -->
-
-<!--FOOD COLLECTOR MODAL-->
-<div class="modal fade" id="regifood" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header bg-success text-white">
-        <h5 class="modal-title" id="exampleModalLabel">Register for Food Collector</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <!--regitstration form-->
-		<form>
-  <div class="form-group">
-    <label class="col-form-label" for="name">Name</label>
-    <input type="text" class="form-control" id="name">
-  </div>
-  <div class="form-group">
-    <label class="col-form-label" for="email">Email</label>
-    <input type="email" class="form-control" id="email">
-  </div>
-  <div class="form-group">
-    <label class="col-form-label" for="phone">Phone Number</label>
-    <input type="text" class="form-control" id="phone">
-  </div>
-  <div class="form-group">
-    <label for="inputAddress">Address</label>
-    <input type="text" class="form-control" id="inputAddress">
-  </div>
-  <div class="form-group">
-    <label for="inputAddress2">Address 2</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputCity">City</label>
-      <input type="text" class="form-control" id="inputCity">
-    </div>
-    <div class="form-group col-md-4">
-      <label for="inputState">State</label>
-      <select id="inputState" class="form-control">
-        <option selected>Choose...</option>
-        <option>...</option>
-      </select>
-    </div>
-    <div class="form-group col-md-2">
-      <label for="inputZip">Zip</label>
-      <input type="text" class="form-control" id="inputZip">
-    </div>
-  </div>
-</form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-success">Register</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--CONTRIBUTOR-->
-<div class="modal fade" id="regicont" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header bg-warning text-white">
-        <h5 class="modal-title" id="exampleModalLabel">Register for Contributor</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      	<!--registration form-->
-        <form>
-  <div class="form-group">
-    <label class="col-form-label" for="storename">Store Name</label>
-    <input type="text" class="form-control" id="storename">
-  </div>
-  <div class="form-group">
-    <label class="col-form-label" for="name">Name</label>
-    <input type="text" class="form-control" id="name">
-  </div>
-  <div class="form-group">
-    <label class="col-form-label" for="email">Email</label>
-    <input type="email" class="form-control" id="email">
-  </div>
-  <div class="form-group">
-    <label class="col-form-label" for="phone">Phone Number</label>
-    <input type="text" class="form-control" id="phone">
-  </div>
-  <div class="form-group">
-    <label for="inputAddress">Address</label>
-    <input type="text" class="form-control" id="inputAddress">
-  </div>
-  <div class="form-group">
-    <label for="inputAddress2">Address 2</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputCity">City</label>
-      <input type="text" class="form-control" id="inputCity">
-    </div>
-    <div class="form-group col-md-4">
-      <label for="inputState">State</label>
-      <select id="inputState" class="form-control">
-        <option selected>Choose...</option>
-        <option>...</option>
-      </select>
-    </div>
-    <div class="form-group col-md-2">
-      <label for="inputZip">Zip</label>
-      <input type="text" class="form-control" id="inputZip">
-    </div>
-    <div class="form-group col-md-12">
-    <label for="pickupinstructions">Instructions for pick-up</label>
-    <textarea class="form-control" id="pickupinstructions" rows="3"></textarea>
-  </div>
-  </div>
-</form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-warning">Register</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!--    /MODALS    -->
-
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!--    /MODALS    -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>
 
 </html>
