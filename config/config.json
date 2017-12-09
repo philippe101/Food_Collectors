@@ -1,0 +1,16 @@
+{
+  "development": {
+    "username": "root",
+    "password": "MAZA9887",
+    "database": "Food_Collectors",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "",
+    "password": "",
+    "database": "",
+    "host": "",
+    "dialect": "mysql"
+  }
+}

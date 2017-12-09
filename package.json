@@ -1,27 +1,19 @@
 {
-  "name": "food_collectors",
+  "name": "food-collector",
   "version": "1.0.0",
-  "description": "Project 2",
-  "main": "server.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/philippe101/Food_Collectors.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/philippe101/Food_Collectors/issues"
-  },
-  "homepage": "https://github.com/philippe101/Food_Collectors#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "express-handlebars": "^3.0.0",
-    "method-override": "^2.3.10",
-    "mysql": "^2.15.0"
+    "mysql2": "^1.5.1",
+    "sequelize": "^4.24.0"
   }
 }
