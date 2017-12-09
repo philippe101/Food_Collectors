@@ -3,7 +3,15 @@ const router = express.Router();
 const db = require('../models');
 
 router.get('/', function(req, res) {
-  res.json('works');
+  res.render('index', {})
+});
+
+router.get('/user/donator', function(req, res) {
+  res.render('donator', {})
+});
+
+router.get('/user/volunteer', function(req, res) {
+  res.render('volunteer', {})
 });
 
 router.get('/api/login/:email', function(req, res) {

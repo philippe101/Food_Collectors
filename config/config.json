@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "MAZA9887",
+    "password": "",
     "database": "Food_Collectors",
     "host": "localhost",
     "dialect": "mysql"

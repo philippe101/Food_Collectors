@@ -1,0 +1,58 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.contributor-container {
+    background-image: url(https://aboutfrankfurt.net/wp-content/uploads/2017/02/b%C3%A4cker.jpg);
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.volunterr-container {
+	background-image: url(https://static1.squarespace.com/static/593d3ec92e69cf4a3e07459c/t/59ff0850f9619a42919766c8/1509886073957/elaine-casap-86020.jpg?format=2500w);
+	height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#table {
+    background: rgb(255, 193, 7);
+    box-sizing: border-box;
+    border: solid #5B6DCD 5px;
+    padding: 5px;
+}
+
+#m-header {
+text-shadow:5px 5px 10px black;
+}
+
+#title {
+	font-family: 'Berkshire Swash', cursive;
+}
+
+#signup {
+	font-family: 'Francois One', sans-serif;
+}
+
+.jumbotron {
+	background-image: url("https://paleofoundation.com/wp-content/uploads/2013/08/Food-Programs-Make-it-Hard-for-Parents-to-send-food-to-school-with-their-children.jpg");
+	background-size: 100%;
+	color: white;
+	font-family: 'Francois One', sans-serif;
+	text-shadow:5px 5px 10px black;
+}
+
+.summary {
+	box-sizing: border-box;
+	background: rgba(29, 101, 15, 0.2);
+}
+
+.foodCollect{
+	background-color: rgb(40, 167, 69);
+	color: white;
+}
