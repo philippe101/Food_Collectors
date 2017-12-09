@@ -7,11 +7,23 @@ router.get('/', function(req, res) {
 });
 
 router.get('/user/donator', function(req, res) {
-  res.render('donator', {})
+  db.user.findAll({})
+  .then(function(result) {
+      res.render('donator', { user: result})
+  })
+  .catch(function(){
+    res.json('error')
+  })
 });
 
 router.get('/user/volunteer', function(req, res) {
-  res.render('volunteer', {})
+  db.order.findAll({})
+  .then(function(result) {
+    res.render('volunteer', { orders: result })
+  })
+  .catch(function(){
+    res.json('error')
+  })
 });
 
 router.get('/api/login/:email', function(req, res) {

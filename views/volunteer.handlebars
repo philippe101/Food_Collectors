@@ -13,25 +13,18 @@
 </h1>
     <!--CARD INFO FOR PICKUPS-->
     <div class="row">
-        <div class="col-sm-3">
-            <div class="card mx-3">
-                <div class="card-body">
-                    <h4 class="card-title">Cheese</h4>
-                    <p class="card-text">There's ... to be picked up at ...!</p>
-                    <p class="card-text"><small class="text-muted">Recieved 45 mins ago</small></p>
-                </div>
-                <img class="card-img-bottom" src="http://images.indianexpress.com/2016/11/hazaribagh-759.jpg" alt="Card image cap">
+      {{#each orders}}
+        <div class="col-md-3">
+          <div class="card mx-3">
+            <div class="card-body">
+                <h4 class="card-title">{{this.name}}</h4>
+                <p class="card-text">Quantity: {{this.quantity}} | Expiration: {{this.expiration}}</p>
+                <p class="card-text"><small class="text-muted">Status: {{this.status}}</small></p>
             </div>
+            <img class="card-img-bottom" src="http://images.indianexpress.com/2016/11/hazaribagh-759.jpg" alt="Card image cap">
           </div>
-          <div class="col-sm-3">
-            <div class="card mx-3">
-                <div class="card-body">
-                    <h4 class="card-title">Donuts</h4>
-                    <p class="card-text">There's ... to be picked up at ...!</p>
-                    <p class="card-text"><small class="text-muted">Recieved just now</small></p>
-                </div>
-                <img class="card-img-bottom" src="http://images.indianexpress.com/2016/11/hazaribagh-759.jpg" alt="Card image cap">
-            </div>
         </div>
+      {{/each}}
     </div>
+
 </div>
