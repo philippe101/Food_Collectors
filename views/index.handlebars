@@ -4,12 +4,12 @@
             <p class="mb-0"><em>“You have not lived today until you have done something for someone who can never repay you.”</em></p>
             <footer class="blockquote-footer text-white">John Bunyan</footer>
         </blockquote>
-        <button type="button" class="btn btn-outline-dark mb-3 " style="background-color: DarkSalmon;" data-toggle="modal" data-target="#signin">Sign In!</button>
+        <a class="btn btn-outline-dark mb-3 " style="background-color: DarkSalmon;"  data-toggle="modal" data-target="#signin" role="button">Sign In!</a>
     </nav>
-    <!--SIGN IN MODAL-->
+ <!--SIGN IN MODAL-->
     <div class="modal fade bd-example-modal-sm" id="signin" tabindex="-1" role="dialog" aria-labelledby="signin form" aria-hidden="true">
         <div class="modal-dialog modal-sm">
-            <div class="modal-content">
+            <div class="signinmodal-content">
                 <div class="modal-header bg-primary text-center text-white py-3">
                     <h1 class="text-center login-title">Welcome Back!</h1>
                 </div>
@@ -18,11 +18,10 @@
                     <form class="form-signin">
                         <input type="text" class="form-control my-3" placeholder="Email" required autofocus>
                         <input type="password" class="form-control mb-3" placeholder="Password" required>
-                        <button class="btn btn-lg btn-primary btn-block mb-2" type="submit">
-                            Sign in</button>
-                        <label class="checkbox pull-left">
+                        <input type="submit" name="login" class="login loginmodal-submit btn btn-lg btn-primary" value="Login">
+                        <input class="checkbox pull-left">
                             <input type="checkbox" value="remember-me"> Remember me
-                        </label>
+                        </input>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -31,15 +30,16 @@
             </div>
         </div>
     </div>
-    <!--JUMBOTRON-->
+       <!--JUMBOTRON-->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 id="title" class="display-1 text-center">Food Collectors</h1>
             <div class="summary rounded">
-                <p class="lead">In the USA, many tons of food are thrown away from grocery stores, bakeries and restaurants on a daily basis. Meanwhile, 1 in 7 people struggle from hunger including children. We want to connect food that is still good but would have been thrown out and deliver it to those in need. </p>
+                <p id="signup" class="h4"><strong>In the USA, many tons of food are thrown away from grocery stores, bakeries and restaurants on a daily basis. Meanwhile, 1 in 7 people struggle from hunger including children. We want to connect food that is still good but would have been thrown out and deliver it to those in need. </strong></p>
             </div>
         </div>
     </div>
+
     <!--JOB LISTINGS-->
     <div class="row">
         <div class="col-sm mx-4">
@@ -55,7 +55,8 @@
             </div>
         </div>
     </div>
-    <button type="button" class="w-50 btn btn-primary btn-lg btn-block mx-auto mb-4" data-toggle="modal" data-target="#register">Don't Wait, Sign Up Now!</button>
+    <button type="button" class="w-50 btn btn-primary btn-lg btn-block mx-auto mb-5" data-toggle="modal" data-target="#register">Don't Wait, Sign Up Now!</button>
+
     <!--  MODALS     -->
     <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -182,10 +183,10 @@
                                 <span class="input-group-addon">
                             <i class="fa fa-key"></i>
                           </span>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                <input type="password" class="form-control" placeholder="Password">
                             </div>
                             <div class="input-group form-group no-border col-md-6">
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
+                                <input type="password" class="form-control" placeholder="Confirm Password">
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">

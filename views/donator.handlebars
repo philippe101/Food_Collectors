@@ -5,29 +5,42 @@
          <p class="mb-0"><em>“You have not lived today until you have done something for someone who can never repay you.”</em></p>
          <footer class="blockquote-footer text-white">John Bunyan</footer>
      </blockquote>
-     <a class="btn btn-outline-dark mb-3 " style="background-color: DarkSalmon;" href="index.html" role="button">Log Out</a>
+     <a class="btn btn-outline-dark mb-3 " style="background-color: DarkSalmon;" href="/" role="button">Log Out</a>
  </nav>
- <div class="main-container">
+
+ <!--MAIN CONTENT-->
+ <div class="contributor-container">
      <h1 class="text-center text-white py-5">
 <display-1>Welcome ...!</display-1>
 </h1>
      <div class="col-sm">
        <!--TABLE-->
          <table class="table table-bordered table-hover text-center" id="table">
+            <ul class="nav nav-pills nav-header-pills">
+      <li class="btn btn-warning">
+        <a class="nav-link text-white" href="/api/new">Add New Item</a>
+      </li>
+      <li class="btn btn-dark">
+        <a class="nav-link  text-white" href="#">Edit</a>
+      </li>
+  </ul>
              <thead class="thead-dark text-white">
                  <tr>
                      <th scope="col">#</th>
                      <th scope="col">Food Item</th>
                      <th scope="col">Quantity</th>
                      <th scope="col">Expiration</th>
+                     <th scope="col">Status</th>
                  </tr>
              </thead>
              <tbody>
                  <tr>
-                     <th scope="row">1</th>
-                     <td>Pickles</td>
-                     <td>12 jars</td>
-                     <td>May 2018</td>
+                    {{#each orders}}
+                     <th scope="row">{{this.type}}</th>
+                     <td>{{this.name}}</td>
+                     <td>{{this.quantity}}</td>
+                     <td>{{this.expiration}}</td>
+                     <td>{{this.status}}</td>
                  </tr>
                  <tr>
                      <th scope="row">2</th>
@@ -41,6 +54,7 @@
                      <td>18 gallons</td>
                      <td>5 days</td>
                  </tr>
+                    {{/each}}
              </tbody>
          </table>
          </div>
