@@ -43,7 +43,7 @@ router.get('/api/login/:email', function(req, res) {
 router.post('/api/new', function(req, res) {
   db.user.create(req.body)
   .then(function(result) {
-    res.json(result);
+    res.redirect("/user/donator");
   })
   .catch(function(){
     res.json('error')

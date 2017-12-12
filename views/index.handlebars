@@ -55,7 +55,7 @@
             </div>
         </div>
     </div>
-    <button type="button" class="w-50 btn btn-primary btn-lg btn-block mx-auto mb-5" data-toggle="modal" data-target="#register">Don't Wait, Sign Up Now!</button>
+    <button type="button" class="w-25 btn btn-primary btn-lg btn-block mx-auto mb-5" data-toggle="modal" data-target="#register">Sign Up Now</button>
 
     <!--  MODALS     -->
     <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
@@ -66,9 +66,17 @@
                 </div>
                 <div class="modal-body">
                     <!--regitstration form-->
-                    <form class="form">
+{{!-- <form action="/api/new" target="_blank" method="POST">
+  <input type="text" name="name">
+  <input type="text" name="phone">
+  <input type="text" name="email">
+  <input type="text" name="address">
+  <input type="submit" value="Submit">
+</form> --}}
+
+                    <form action="/api/new" method="POST">
                         <select class="custom-select mb-3">
-                            <option selected>Select Your Job</option>
+                            <option selected><strong>PLEASE SELECT</strong></option>
                             <option value="1">Food Collector</option>
                             <option value="2">Food Donations</option>
                         </select>
@@ -76,19 +84,19 @@
                             <span class="input-group-addon">
                             <i class="fa fa-user-circle"></i>
                           </span>
-                            <input type="text" class="form-control" placeholder="Name...">
+                            <input type="text" name="name" class="form-control" placeholder="Name...">
                         </div>
                         <div class="input-group form-group no-border">
                             <span class="input-group-addon">
                               <i class="fa fa-phone-square"></i>
                             </span>
-                            <input type="text" class="form-control" placeholder="Phone...">
+                            <input type="text" name="phone" class="form-control" placeholder="Phone...">
                         </div>
                         <div class="input-group form-group no-border">
                             <span class="input-group-addon">
                               <i class="fa fa-home"></i>
                             </span>
-                            <input type="text" class="form-control" placeholder="Address...">
+                            <input type="text" name="address" class="form-control" placeholder="Address...">
                         </div>
                         <div class="input-group form-group no-border">
                             <span class="input-group-addon">
@@ -176,7 +184,7 @@
                             <span class="input-group-addon">
                             <i class="fa fa-envelope"></i>
                           </span>
-                            <input type="email" class="form-control" placeholder="Email...">
+                            <input type="email" name="email" class="form-control" placeholder="Email...">
                         </div>
                         <div class="form-row">
                             <div class="input-group form-group no-border col-md-6">
@@ -194,12 +202,15 @@
                                 </label>
                             </div>
                         </div>
-                    </form>
+                        
+                    
                 </div>
                 <div class="modal-footer">
                     <a href="#signin" data-toggle="modal" data-target="#signin">Already Signed Up?</a>
-                    <button type="submit" class="btn btn-primary">Register</button>
+                    <button type="submit" class="btn btn-primary" value="submit">Register</button>
+
                 </div>
+                </form>
             </div>
         </div>
     </div>
