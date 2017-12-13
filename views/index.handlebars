@@ -75,6 +75,7 @@
 </form> --}}
 
                     <form action="/api/new" method="POST">
+                        <label class="mb-2"><strong>Create your Login Info:</strong></label>
                         <select class="custom-select mb-3">
                             <option selected><strong>PLEASE SELECT</strong></option>
                             <option value="1">Food Collector</option>
@@ -98,7 +99,7 @@
                             </span>
                             <input type="text" name="address" class="form-control" placeholder="Address...">
                         </div>
-                        <div class="input-group form-group no-border">
+                        {{!-- <div class="input-group form-group no-border">
                             <span class="input-group-addon">
                               <i class="fa fa-home"></i>
                             </span>
@@ -170,23 +171,22 @@
                             <div class="form-group col-md-2">
                                 <input type="text" class="form-control" placeholder="Zip">
                             </div>
-                        </div>
+                        </div> --}}
                         <hr class="mb-3">
-                        <label class="mb-2"><strong>Create your Login Info:</strong></label>
-                        <div class="input-group form-group no-border">
+
+                        {{!-- <div class="input-group form-group no-border">
                             <span class="input-group-addon">
                               <i class="fa fa-twitter"></i>
                             </span>
                             <input type="text" class="form-control" placeholder="@Twitter Handlebar" aria-label="Recipient's username" aria-describedby="basic-addon2">
-
-                        </div>
+                        </div> --}}
                         <div class="input-group form-group no-border">
                             <span class="input-group-addon">
                             <i class="fa fa-envelope"></i>
                           </span>
                             <input type="email" name="email" class="form-control" placeholder="Email...">
                         </div>
-                        <div class="form-row">
+                       {{!--  <div class="form-row">
                             <div class="input-group form-group no-border col-md-6">
                                 <span class="input-group-addon">
                             <i class="fa fa-key"></i>
@@ -195,16 +195,14 @@
                             </div>
                             <div class="input-group form-group no-border col-md-6">
                                 <input type="password" class="form-control" placeholder="Confirm Password">
-                            </div>
-                            <div class="form-check">
+                            </div> --}}
+                            {{!-- <div class="form-check">
                                 <label class="form-check-label">
                                     <input type="checkbox" class="form-check-input"> Remember Me
                                 </label>
                             </div>
-                        </div>
-                        
-                    
-                </div>
+                        </div>--}}
+                </div> 
                 <div class="modal-footer">
                     <a href="#signin" data-toggle="modal" data-target="#signin">Already Signed Up?</a>
                     <button type="submit" class="btn btn-primary" value="submit">Register</button>
