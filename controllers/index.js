@@ -67,7 +67,7 @@ router.get('/user/:id', function(req, res) {
 router.post('/api/order', function(req, res) {
   db.order.create(req.body)
   .then(function(result) {
-    res.json(result);
+    res.redirect("/user/donator");
   })
   .catch(function(){
     res.json('error')
@@ -85,7 +85,7 @@ router.put('/api/order/:id', function(req, res) {
     }
   })
   .then(function(result) {
-    res.json(result);
+     res.redirect("/user/donator");
   })
   .catch(function(){
     res.json('error')
@@ -99,7 +99,7 @@ router.delete('/api/order/:id', function(req, res) {
     }
   })
   .then(function(result) {
-    res.json(result);
+     res.redirect("/user/donator");
   })
   .catch(function(){
     res.json('error')
@@ -108,8 +108,8 @@ router.delete('/api/order/:id', function(req, res) {
 
 router.get('/api/orders/all', function(req, res) {
   db.order.findAll({})
-  .then(function(result) {
-    res.json(result);
+  .then(function(results) {
+    res.json(results);
   })
   .catch(function(){
     res.json('error')

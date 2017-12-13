@@ -17,13 +17,31 @@
        <!--TABLE-->
          <table class="table table-bordered table-hover text-center" id="table">
             <ul class="nav nav-pills nav-header-pills">
-      <li class="btn btn-warning">
-        <a class="nav-link text-white" href="/api/new">Add New Item</a>
-      </li>
-      <li class="btn btn-dark">
-        <a class="nav-link  text-white" href="#">Edit</a>
-      </li>
-  </ul>
+                 {{!--  <li class="btn btn-warning">
+                    <a class="nav-link text-white" href="/api/new">Add New Item</a>
+                  </li> --}}
+                <button type="button" class="w-25 btn btn-primary btn-lg btn-block mx-auto mb-5" data-toggle="modal" data-target="#register">Add New Item</button>
+                    <!--  MODALS     -->
+                <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="header bg-primary text-center text-white py-3" id="mHeader">
+                                <h4 class="modal-title title-up" id="exampleModalLabel">Add New Item</h4>
+                            </div>
+                <div class="modal-body">
+                    <!--regitstration form-->
+                    <form action="/api/order" method="POST">
+                      <input type="text" name="name">
+                      <input type="text" name="quantity">
+                      <input type="text" name="expiration">
+                      <input type="text" name="status">
+                      <input type="submit" id="btn" value="Submit">
+                    </form>
+
+                <li class="btn btn-dark">
+                    <a class="nav-link  text-white" href="#">Edit</a>
+                </li>
+            </ul>
              <thead class="thead-dark text-white">
                  <tr>
                      <th scope="col">#</th>
@@ -34,29 +52,35 @@
                  </tr>
              </thead>
              <tbody>
-                 <tr>
+                {{!--  <tr>
+                    
+                     <th scope="row">{{this.id}}</th>
+                      
                     {{#each orders}}
-                     <th scope="row">{{this.type}}</th>
-                     <td>{{this.name}}</td>
-                     <td>{{this.quantity}}</td>
-                     <td>{{this.expiration}}</td>
-                     <td>{{this.status}}</td>
-                 </tr>
+                        <td>{{this.name}}</td>. <td>{{this.quantity}}</td>. <td>{{this.expiration}}</td>.<td>{{this.status}}</td>
+                    {{/each}}
+                       
+                        
+                    
+                   
+                 </tr> --}}
                  <tr>
-                     <th scope="row">2</th>
+                     <th scope="row">Sample</th>
                      <td>Cookies</td>
                      <td>5 dozen</td>
-                     <td>2 weeks</td>
+                     <td>12-12-2017</td>
+                     <td>Please enter "1" or "0"</td>
                  </tr>
-                 <tr>
-                     <th scope="row">3</th>
+{{!--                  <tr>
+                     <th scope="row">Sample 2</th>
                      <td>Mashed Potatoes</td>
                      <td>18 gallons</td>
                      <td>5 days</td>
-                 </tr>
-                    {{/each}}
+                 </tr> --}}
+                    
              </tbody>
-         </table>
-         </div>
-     </div>
+        </table>
+    </div>
+</div>
      <!--FOOTER-->
+{{!-- <div id="chirp-area"></div> --}}
