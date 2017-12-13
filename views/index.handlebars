@@ -76,10 +76,10 @@
 
                     <form action="/api/new" method="POST">
                         <label class="mb-2"><strong>Create your Login Info:</strong></label>
-                        <select class="custom-select mb-3">
+                        <select name="user_type" class="custom-select mb-3">
                             <option selected><strong>PLEASE SELECT</strong></option>
-                            <option value="1">Food Collector</option>
-                            <option value="2">Food Donations</option>
+                            <option value="volunteer">Food Collector</option>
+                            <option value="donator">Food Donations</option>
                         </select>
                         <div class="input-group form-group no-border">
                             <span class="input-group-addon">

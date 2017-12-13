@@ -1,7 +1,6 @@
-
 $(document).ready(function() {
 
-  // When the page loads, grab all of our chirps
+  // When the page loads, grab all of our data
   $.get('/api/orders/all', function(data) {
 
     if (data.length !== 0) {
