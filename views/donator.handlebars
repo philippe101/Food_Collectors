@@ -11,39 +11,38 @@
  <!--MAIN CONTENT-->
  <div class="contributor-container">
      <h1 class="text-center text-white py-5">
-<display-1>Welcome ...!</display-1>
+<display-1>Welcome {{$user}}!</display-1>
 </h1>
      <div class="col-sm">
        <!--TABLE-->
          <table class="table table-bordered table-hover text-center" id="table">
             <ul class="nav nav-pills nav-header-pills">
-                <button type="button" class="w-25 btn btn-primary btn-lg btn-block mx-auto mb-5" data-toggle="modal" data-target="#register">Add New Item</button>
+                <button type="button" class="w-25 btn btn-dark text-white btn-lg btn-block mx-auto mb-5" data-toggle="modal" data-target="#register">Add New Item</button>
                     <!--  MODALS     -->
                 <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
-                            <div class="header bg-primary text-center text-white py-3" id="mHeader">
+                            <div class="header text-center text-white py-3" style="background-color: #00C4C2;">
                                 <h4 class="modal-title title-up" id="exampleModalLabel">Add New Item</h4>
                             </div>
                 <div class="modal-body">
                     <!--regitstration form-->
                     <form action="/api/order" method="POST">
-                      <input type="text" name="name" class="form-control form-control-lg" placeholder="Food Item...">
-                      <input type="text" name="quantity"class="form-control" placeholder="Quantity...">
-                      <input type="text" name="expiration"class="form-control" placeholder="Expiration...">
+                      <input type="text" name="name" class="form-control form-control-lg mb-3" placeholder="Food Items...">
+                      <input type="text" name="quantity"class="form-control form-control-lg mb-3" placeholder="Quantity...">
+                      <input type="text" name="expiration"class="form-control form-control-lg mb-3" placeholder="Expiration...">
                       {{!-- <input type="text" name="status" class="form-control" placeholder="Name..."> --}}
-                      <input type="submit" id="btn" value="Submit">
-                    
-                    <a class="btn btn-dark text-white" href="#">Edit</a>
-                    </form>
+                      <input type="submit" class="btn btn-dark text-white btn-lg" value="Submit">
+                  </form>
             </ul>
              <thead class="thead-dark text-white">
                  <tr>
                      <th scope="col">#</th>
-                     <th scope="col">Food Item</th>
+                     <th scope="col">Food Items</th>
                      <th scope="col">Quantity</th>
                      <th scope="col">Expiration</th>
                      <th scope="col">Status</th>
+                     <th scope="col">Edit</th>
                  </tr>
              </thead>
              <tbody>
@@ -52,9 +51,11 @@
                      <td>Cookies</td>
                      <td>5 dozen</td>
                      <td>12-12-2017</td>
-                     <td>Please enter "1" or "0"</td>
+                     <td>Accepted or Delivered</td>
+                     <td><a class="btn btn-dark text-white" id="food-edit" href="#">Edit</a></td>
                  </tr>
              </tbody>
         </table>
     </div>
 </div>
+<br><br>

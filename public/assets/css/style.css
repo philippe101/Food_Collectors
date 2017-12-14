@@ -6,20 +6,19 @@ html {
 
 .contributor-container {
     background-image: url("/assets/images/donator.jpg");
-    height: 90%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+/*Volunteer background*/
 .volunteer-container {
 	background-image: url("/assets/images/volunteer.jpg");
-	height: 90%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
-
+/*Donator Table*/
 #table {
     background: rgb(255, 193, 7);
     box-sizing: border-box;
@@ -27,9 +26,9 @@ html {
     padding: 5px;
 }
 
-#m-header {
+/*#m-header {
 text-shadow:5px 5px 10px black;
-}
+}*/
 
 #title {
 	font-family: 'Berkshire Swash', cursive;
@@ -59,4 +58,9 @@ text-shadow:5px 5px 10px black;
 
 .bd-footer{
     background-color: #00C4C2;
+}
+
+#card{
+    filter:alpha(opacity=50); 
+   /* opacity:0.5;*/
 }
