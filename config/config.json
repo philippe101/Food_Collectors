@@ -1,16 +1,17 @@
 {
   "development": {
     "username": "root",
-    "password": "",
+    "password": "27Manlekey!",
     "database": "Food_Collectors",
     "host": "localhost",
     "dialect": "mysql"
   },
   "production": {
-    "username": "",
-    "password": "",
-    "database": "",
-    "host": "",
-    "dialect": "mysql"
+    "use_env_variable": "DATABASE_URL",
+    "username": "xyajx7ohcl42trih",
+    "password": "xvxtfmx6ri9dw82p",
+    "database": "Project2db",
+    "host": "https://boiling-escarpment-92288.herokuapp.com",
+    "dialect": "postgres"
   }
 }
