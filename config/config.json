@@ -6,12 +6,20 @@
     "host": "localhost",
     "dialect": "mysql"
   },
+  
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
   "production": {
-    "use_env_variable": "process.env.JAWSDB_URL",
     "username": "xyajx7ohcl42trih",
     "password": "xvxtfmx6ri9dw82p",
-    "database": "Project2db",
-    "host": "https://boiling-escarpment-92288.herokuapp.com",
-    "dialect": "mysql"
+    "database": "n7wakaeqr8z3rqqv",
+    "host": " tk3mehkfmmrhjg0b.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql",
+    "use_env_variable": "mysql://xyajx7ohcl42trih:xvxtfmx6ri9dw82p@tk3mehkfmmrhjg0b.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/n7wakaeqr8z3rqqv"
   }
 }
