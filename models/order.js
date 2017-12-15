@@ -16,7 +16,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     expiration: {
-      type: Sequelize.DATE,
+      type: Sequelize.STRING,
       allowNull: false
     },
     status: {

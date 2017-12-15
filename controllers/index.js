@@ -43,14 +43,14 @@ router.get('/api/login/:email', function(req, res) {
 router.post('/api/new', function(req, res) {
   db.user.create(req.body)
   .then(function(result) {
-    res.redirect("/user/donator");
+    res.redirect("/user/" + req.body.user_type);
   })
   .catch(function(){
     res.json('error')
   })
 });
 
-router.get('/user/:id', function(req, res) {
+router.get('/table/:id', function(req, res) {
   db.user.findOne({
     where: {
       id: req.params.id
