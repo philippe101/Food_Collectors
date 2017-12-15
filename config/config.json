@@ -1,12 +1,12 @@
 {
   "development": {
     "username": "root",
-    "password": "27Manlekey!",
+    "password": "",
     "database": "Food_Collectors",
     "host": "localhost",
     "dialect": "mysql"
   },
-  
+
   "test": {
     "username": "root",
     "password": null,
