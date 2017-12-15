@@ -11,8 +11,8 @@ router.get('/user/donator', function(req, res) {
   .then(function(result) {
       res.render('donator', { user: result})
   })
-  .catch(function(){
-    res.json('error')
+  .catch(function(err){
+    res.json(err)
   })
 });
 
@@ -99,7 +99,7 @@ router.delete('/api/order/:id', function(req, res) {
     }
   })
   .then(function(result) {
-     res.redirect("/user/donator");
+     res.json(result);
   })
   .catch(function(){
     res.json('error')

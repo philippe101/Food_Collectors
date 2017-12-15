@@ -1,27 +1,23 @@
 <!--NAVBAR-->
-    <nav class="navbar navbar-light col align-items-end fixed-top" style="background-color: #00C4C2;">
+    <nav class="navbar navbar-light col align-items-end" style="background-color: #00C4C2;">
         <blockquote class="blockquote">
             <p class="mb-0"><em>“You have not lived today until you have done something for someone who can never repay you.”</em></p>
             <footer class="blockquote-footer text-white">John Bunyan</footer>
         </blockquote>
-        <a class="btn btn-outline-dark mb-3 " style="background-color: DarkSalmon;"  data-toggle="modal" data-target="#signin" role="button">Sign In!</a>
+        <a class="btn btn-dark text-white btn-lg mb-2"data-toggle="modal" data-target="#signin" role="button">Sign In!</a>
     </nav>
  <!--SIGN IN MODAL-->
     <div class="modal fade bd-example-modal-sm" id="signin" tabindex="-1" role="dialog" aria-labelledby="signin form" aria-hidden="true">
         <div class="modal-dialog modal-sm">
-            <div class="signinmodal-content">
-                <div class="modal-header bg-primary text-center text-white py-3">
+            <div class="modal-content">
+                <div class="modal-header bg text-center text-white py-3" style="background-color: #00C4C2;">
                     <h1 class="text-center login-title">Welcome Back!</h1>
                 </div>
                 <div class="modal-body">
-                    <img class="w-50 rounded-circle ml-5" src="https://ukla.org/images/icons/user-icon.svg" alt="...">
                     <form class="form-signin">
-                        <input type="text" class="form-control my-3" placeholder="Email" required autofocus>
+                        <input type="text" class="form-control my-3" placeholder="Email" required>
                         <input type="password" class="form-control mb-3" placeholder="Password" required>
-                        <input type="submit" name="login" class="login loginmodal-submit btn btn-lg btn-primary" value="Login">
-                        <input class="checkbox pull-left">
-                            <input type="checkbox" value="remember-me"> Remember me
-                        </input>
+                        <button type="submit" class="btn btn-dark text-white btn-lg mb-2">Sign In</button>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -35,33 +31,31 @@
         <div class="container">
             <h1 id="title" class="display-1 text-center">Food Collectors</h1>
             <div class="summary rounded">
-                <p id="signup" class="h4"><strong>In the USA, many tons of food are thrown away from grocery stores, bakeries and restaurants on a daily basis. Meanwhile, 1 in 7 people struggle from hunger including children. We want to connect food that is still good but would have been thrown out and deliver it to those in need. </strong></p>
+                <p id="signup" class="h4"><strong>In the USA, every year 60 million tons of food are thrown away from grocery stores, bakeries and restaurants. Meanwhile, 1 in 7 people struggle from hunger including children. We want to connect food that is still good but would have been thrown out and deliver it to those in need. </strong></p>
             </div>
         </div>
     </div>
-
     <!--JOB LISTINGS-->
     <div class="row">
         <div class="col-sm mx-4">
             <div id="title" class="card-header bg-success display-4 text-white text-center">Food Collector</div>
             <div class="card-body">
-                <p id="signup" class="h4 mb-4">Help out the good cause and volunteer your time to deliver food donations to a local food bank. You will be helping feed those in need and that's something you can feel good about.</p>
+                <p id="signup" class="h4 mb-4">Help out the good cause and volunteer your time to pick up and deliver food donations to a local food bank. You will be helping feed those in need and that's something you can feel good about.</p>
             </div>
         </div>
         <div class="col-sm mx-4">
             <div id="title" class="card-header bg-warning display-4 text-white text-center">Food Donations</div>
             <div class="card-body">
-                <p id="signup" class="h4 mb-4">Don't throw that perfectly good food away! Come and register with us and we'll have someone stop by and pick up that food from you. You'll be feeding those who are struggling with hunger.</p>
+                <p id="signup" class="h4 mb-4">Don't throw that perfectly good food away! Come and register with us and we'll have someone stop by and pick it up. You'll be feeding those who are struggling with hunger.</p>
             </div>
         </div>
     </div>
-    <button type="button" class="w-25 btn btn-primary btn-lg btn-block mx-auto mb-5" data-toggle="modal" data-target="#register">Sign Up Now</button>
-
+    <button type="button" class="w-25 btn btn-primary text-white btn-lg btn-block mx-auto mb-5" data-toggle="modal" data-target="#register">Sign Up Now</button>
     <!--  MODALS     -->
     <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="header bg-primary text-center text-white py-3" id="mHeader">
+                <div class="header bg text-center text-white py-3" style="background-color: #00C4C2;">
                     <h4 class="modal-title title-up" id="exampleModalLabel">Sign Up</h4>
                 </div>
                 <div class="modal-body">
@@ -73,7 +67,6 @@
   <input type="text" name="address">
   <input type="submit" value="Submit">
 </form> --}}
-
                     <form action="/api/new" method="POST">
                         <label class="mb-2"><strong>Create your Login Info:</strong></label>
                         <select name="user_type" class="custom-select mb-3">
@@ -85,19 +78,19 @@
                             <span class="input-group-addon">
                             <i class="fa fa-user-circle"></i>
                           </span>
-                            <input type="text" name="name" class="form-control" placeholder="Name...">
+                            <input id="name" type="text" name="name" class="form-control" placeholder="Name..." required>
                         </div>
                         <div class="input-group form-group no-border">
                             <span class="input-group-addon">
                               <i class="fa fa-phone-square"></i>
                             </span>
-                            <input type="text" name="phone" class="form-control" placeholder="Phone...">
+                            <input type="text" name="phone" class="form-control" placeholder="Phone..." required>
                         </div>
                         <div class="input-group form-group no-border">
                             <span class="input-group-addon">
                               <i class="fa fa-home"></i>
                             </span>
-                            <input type="text" name="address" class="form-control" placeholder="Address...">
+                            <input type="text" name="address" class="form-control" placeholder="Address..." required>
                         </div>
                         {{!-- <div class="input-group form-group no-border">
                             <span class="input-group-addon">
@@ -173,7 +166,6 @@
                             </div>
                         </div> --}}
                         <hr class="mb-3">
-
                         {{!-- <div class="input-group form-group no-border">
                             <span class="input-group-addon">
                               <i class="fa fa-twitter"></i>
@@ -184,7 +176,7 @@
                             <span class="input-group-addon">
                             <i class="oi oi-envelope-closed"></i>
                           </span>
-                            <input type="email" name="email" class="form-control" placeholder="Email...">
+                            <input type="email" name="email" class="form-control" placeholder="Email..." required>
                         </div>
                        {{!--  <div class="form-row">
                             <div class="input-group form-group no-border col-md-6">
@@ -205,8 +197,7 @@
                 </div> 
                 <div class="modal-footer">
                     <a href="#signin" data-toggle="modal" data-target="#signin">Already Signed Up?</a>
-                    <button type="submit" class="btn btn-primary" value="submit">Register</button>
-
+                    <button id="abc" type="submit" class="btn btn-dark text-white" value="submit">Register</button>
                 </div>
                 </form>
             </div>

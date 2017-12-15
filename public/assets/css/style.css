@@ -9,10 +9,11 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 /*Volunteer background*/
 .volunteer-container {
-	background-image: url("/assets/images/volunteer.jpg");
+    background-image: url("/assets/images/volunteer.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,41 +27,32 @@ html {
     padding: 5px;
 }
 
-/*#m-header {
-text-shadow:5px 5px 10px black;
-}*/
-
 #title {
-	font-family: 'Berkshire Swash', cursive;
+    font-family: 'Berkshire Swash', cursive;
 }
 
 #signup {
-	font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .jumbotron {
-	background-image: url("/assets/images/Fchild_hunger.jpg");
-	background-size: 100%;
-	color: white;
-	font-family: 'Francois One', sans-serif;
-	text-shadow:5px 5px 10px black;
+    background-image: url("/assets/images/Fchild_hunger.jpg");
+    background-size: 100%;
+    color: white;
+    font-family: 'Francois One', sans-serif;
+    text-shadow:5px 5px 10px black;
 }
 
 .summary {
-	box-sizing: border-box;
-	background: rgba(29, 101, 15, 0.2);
+    box-sizing: border-box;
+    background: rgba(29, 101, 15, 0.2);
 }
 
 .foodCollect{
-	background-color: rgb(40, 167, 69);
-	color: white;
+    background-color: rgb(40, 167, 69);
+    color: white;
 }
 
 .bd-footer{
     background-color: #00C4C2;
-}
-
-#card{
-    filter:alpha(opacity=50); 
-   /* opacity:0.5;*/
 }

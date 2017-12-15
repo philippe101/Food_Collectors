@@ -1,18 +1,14 @@
 <!--NAVBAR-->
-
  <nav class="navbar navbar-light col align-items-end" style="background-color: #00C4C2;">
      <blockquote class="blockquote">
          <p class="mb-0"><em>“You have not lived today until you have done something for someone who can never repay you.”</em></p>
          <footer class="blockquote-footer text-white">John Bunyan</footer>
      </blockquote>
-     <a class="btn btn-outline-dark mb-3 " style="background-color: DarkSalmon;" href="/" role="button">Log Out</a>
+     <a class="btn btn-dark text-white btn-lg mb-2" href="/" role="button">Log Out</a>
  </nav>
-
  <!--MAIN CONTENT-->
  <div class="contributor-container">
-     <h1 class="text-center text-white py-5">
-<display-1>Welcome {{$user}}!</display-1>
-</h1>
+     <h1 class="display-1 text-center text-white py-5" id="title">Welcome <span id="username"></span>!</h1>
      <div class="col-sm">
        <!--TABLE-->
          <table class="table table-bordered table-hover text-center" id="table">
@@ -30,7 +26,8 @@
                     <form action="/api/order" method="POST">
                       <input type="text" name="name" class="form-control form-control-lg mb-3" placeholder="Food Items...">
                       <input type="text" name="quantity"class="form-control form-control-lg mb-3" placeholder="Quantity...">
-                      <input type="text" name="expiration"class="form-control form-control-lg mb-3" placeholder="Expiration...">
+                      Expiration Date:
+                      <input type="date" name="expiration"class="form-control form-control-lg mb-3" placeholder="Expiration...">
                       {{!-- <input type="text" name="status" class="form-control" placeholder="Name..."> --}}
                       <input type="submit" class="btn btn-dark text-white btn-lg" value="Submit">
                   </form>
