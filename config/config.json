@@ -12,6 +12,6 @@
     "password": "xvxtfmx6ri9dw82p",
     "database": "Project2db",
     "host": "https://boiling-escarpment-92288.herokuapp.com",
-    "dialect": "postgres"
+    "dialect": "mysql"
   }
 }
