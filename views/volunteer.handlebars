@@ -20,14 +20,15 @@
                 <h4 class="card-title">{{this.name}}</h4>
                 <p class="card-text">Quantity: {{this.quantity}} of {{this.name}}!</p>
                 <p class="card-text"> It expires on <mark>{{this.expiration}}</mark>. 
+                <p class="card-text">Pick address: {{this.address}}</p>
                 <p class="card-text">Let's go get it!</p>
-                <p class="card-text"><small class="text-muted">Received: {{this.status}}</small></p>
             </div>
 
             <div class="btn-group mx-auto mb-2" role="group" aria-label="Basic example">
-              <button class="btn btn-success food-delete" data-delete ={{this.id}}  type="submit">Picked Up</button>
-              <button class="btn btn-warning food-delete data-delete='" data[i].id type="submit" >Delivered</button>
+              <button class="btn btn-warning food-delete data-delete='" data[i].id type="submit" >Picked Up</button>
+              <button class="btn btn-success food-delete" data-delete ={{this.id}}  type="submit">Delivered</button>
             </div>
+
             {{!-- Google Maps Div --}}
               <img class="card-img-bottom" src="http://images.indianexpress.com/2016/11/hazaribagh-759.jpg" alt="Card image cap">
           </div>
@@ -36,4 +37,5 @@
     </div>
 
 </div>
+
 

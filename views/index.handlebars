@@ -16,7 +16,7 @@
                 <div class="modal-body">
                     <form class="form-signin">
                         <input type="text" class="form-control my-3" placeholder="Email" required>
-                        <input type="password" class="form-control mb-3" placeholder="Password" required>
+                        <input type="password" class="form-control mb-3" placeholder="Password">
                         <button type="submit" class="btn btn-dark text-white btn-lg mb-2">Sign In</button>
                     </form>
                 </div>
@@ -59,18 +59,12 @@
                     <h4 class="modal-title title-up" id="exampleModalLabel">Sign Up</h4>
                 </div>
                 <div class="modal-body">
+
                     <!--regitstration form-->
-{{!-- <form action="/api/new" target="_blank" method="POST">
-  <input type="text" name="name">
-  <input type="text" name="phone">
-  <input type="text" name="email">
-  <input type="text" name="address">
-  <input type="submit" value="Submit">
-</form> --}}
                     <form action="/api/new" method="POST">
                         <label class="mb-2"><strong>Create your Login Info:</strong></label>
                         <select name="user_type" class="custom-select mb-3">
-                            <option selected><strong>PLEASE SELECT</strong></option>
+                            <option required><strong>PLEASE SELECT</strong></option>
                             <option value="volunteer">Food Collector</option>
                             <option value="donator">Food Donations</option>
                         </select>
@@ -86,12 +80,12 @@
                             </span>
                             <input type="text" name="phone" class="form-control" placeholder="Phone..." required>
                         </div>
-                        <div class="input-group form-group no-border">
+                       {{!--  <div class="input-group form-group no-border">
                             <span class="input-group-addon">
                               <i class="fa fa-home"></i>
                             </span>
                             <input type="text" name="address" class="form-control" placeholder="Address..." required>
-                        </div>
+                        </div> --}}
                         {{!-- <div class="input-group form-group no-border">
                             <span class="input-group-addon">
                               <i class="fa fa-home"></i>

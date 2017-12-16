@@ -19,9 +19,9 @@ module.exports = function(sequelize, DataTypes) {
       type: Sequelize.STRING,
       allowNull: false
     },
-    status: {
-      type: Sequelize.INTEGER,
-      defaultValue: 1
+    address: {
+      type: Sequelize.STRING,
+      allowNull: false
     }
   });
   return Order;

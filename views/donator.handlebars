@@ -26,9 +26,10 @@
                     <form action="/api/order" method="POST">
                       <input type="text" name="name" class="form-control form-control-lg mb-3" placeholder="Food Items...">
                       <input type="text" name="quantity"class="form-control form-control-lg mb-3" placeholder="Quantity...">
-                      Expiration Date:
-                      <input type="date" name="expiration"class="form-control form-control-lg mb-3" placeholder="Expiration...">
-                      {{!-- <input type="text" name="status" class="form-control" placeholder="Name..."> --}}
+                      <input type="text" name="address" class="form-control form-control-lg mb-3" placeholder="Address...">
+                      <div>Expiration Date:
+                        <input type="date" name="expiration"class="form-control form-control-lg mb-3" placeholder="Expiration...">
+                      </div>
                       <input type="submit" class="btn btn-dark text-white btn-lg" value="Submit">
                   </form>
             </ul>
@@ -37,9 +38,10 @@
                      <th scope="col">#</th>
                      <th scope="col">Food Items</th>
                      <th scope="col">Quantity</th>
-                     <th scope="col">Expiration</th>
-                     <th scope="col">Status</th>
+                     <th scope="col">Pick Up Address</th>
+                     <th scope="col">Expiration Date</th>
                      <th scope="col">Update Items</th>
+
                  </tr>
              </thead>
              <tbody>
@@ -47,8 +49,8 @@
                      <th scope="row">Sample</th>
                      <td>Cookies</td>
                      <td>5 dozen</td>
-                     <td>12-12-2017</td>
-                     <td>Accepted or Delivered</td>
+                     <td>123 Lane Street</td>
+                     <td>2017-12-30</td>
                      <td><button class="btn btn-dark text-white" id="food-edit">Edit</button>   
                     <button class="btn btn-dark text-white" id="food-delete">Delete</button></td>
 
@@ -56,5 +58,4 @@
              </tbody>
         </table>
     </div>
-</div>
-<br><br>
+

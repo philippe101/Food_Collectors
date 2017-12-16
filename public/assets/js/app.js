@@ -9,7 +9,7 @@ $(document).ready(function() {
 	      for (var i = 0; i < data.length; i++) {
 
 
-	        $("#table > tbody").append("<tr><th>" + data[i].id + "</td><td>" + data[i].name + "</td><td>" + data[i].quantity + "</td><td>" + data[i].expiration + "</td><td>" + data[i].status + "</td><td>" + "<button class='btn btn-dark text-white food-edit' data-edit='" + data[i].id + "'>Edit</button> <button class='btn btn-dark text-white food-delete' data-delete='" + data[i].id + " '>Delete</button>" + "</td></th>");
+	        $("#table > tbody").append("<tr><th>" + data[i].id + "</td><td>" + data[i].name + "</td><td>" + data[i].quantity + "</td><td>" + data[i].address + "</td><td>" + data[i].expiration + "</td><td>" + "<button class='btn btn-dark text-white food-edit' data-edit='" + data[i].id + "'>Edit</button> <button class='btn btn-dark text-white food-delete' data-delete='" + data[i].id + " '>Delete</button>" + "</td></th>");
 	      }
 	    }
 	  });
@@ -19,7 +19,7 @@ $(document).on("click", "button#abc", assignUser);
 
 
   // Adding event listeners for deleting, editing, and adding todos
-  // $(document).on("click", "food-edit", editItem);
+  $(document).on("click", "food-edit", editItem);
   $(document).on("click", ".food-delete", deleteItem);
   // $(document).on("click", ".todo-item", editTodo);
   // // $(document).on("keyup", ".todo-item", finishEdit);
@@ -67,11 +67,30 @@ $(document).on("click", "button#abc", assignUser);
 
    // This function handles showing the input box for a user to edit a todo
   function editItem() {
-    var currentItem = $(this).data("tod");
+    var currentItem = $(this).data("item");
     $(this).children().hide();
-    $(this).children("input.edit").val(currentTodo.text);
+    $(this).children("input.edit").val(currentItem.text);
     $(this).children("input.edit").show();
     $(this).children("input.edit").focus();
   }
   	
+
+  // Toggles complete status
+  function toggleComplete(event) {
+    event.stopPropagation();
+    var item = $(this).parent().data("item");
+    item.complete = !item.complete;
+    updateOrder(item);
+  }
+
+   // This function updates a todo in our database
+  function updateOrder(item) {
+    $.ajax({
+      method: "PUT",
+      url: '/api/order/' + id,
+      data: item
+    }).done(location.reload());
+  }
+
+
 });
