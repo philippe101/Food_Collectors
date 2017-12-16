@@ -2,8 +2,8 @@
 
 ## Links:
 
-GitHub: https://github.com/philippe101/Food_Collectors
-Heroku: https://boiling-escarpment-92288.herokuapp.com/
+- GitHub: https://github.com/philippe101/Food_Collectors
+- Heroku: https://boiling-escarpment-92288.herokuapp.com/
 
 ## Objective
 
